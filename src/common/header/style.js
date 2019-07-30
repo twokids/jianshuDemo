@@ -42,20 +42,39 @@ color:#333;
     color:#ea6f5a;
 }
 `
+
+export const SearchWrapper=styled.div`
+position:relative;
+float:left;
+.iconfont:{
+    position:absolute;
+    right:5px;
+    bottom:5px;
+    background:gray;
+    width:30px;
+    line-height:30px;
+    text-align:center;
+    border-radius:15px;
+}
+`
+
+
 export const NavSearch=styled.input.attrs({
     placeholder:'搜索'
 })`
+
 width:160px;
 height:38px;
 border:none;
-outLine:none;
+outline:none;
 border-radius:19px;
 margin-top:9px;
 margin-left:20px;
-padding:0px 20px;
+padding:0px 35px 0px 20px;
 box-sizing:border-box;
 background:#eee;
 font-size:14px;
+color:#666;
 &::placeholder{
     color:#999;
 }
